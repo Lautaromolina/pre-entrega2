@@ -1,0 +1,114 @@
+:root {
+  --crema: #fdfbcd;
+  --morado: #984678;
+  --negro: #000;
+  --blanco: #fff;
+  --blancoM1: #fefef0;
+  --blancoM2: #fefeee;
+  --rojo: #bd3d47;
+  --marron: #9b6a6c;
+  --fuentePrincipal: "Nanum Myeongjo", serif;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*Globales*/
+* {
+  font-family: var(--fuentePrincipal);
+}
+.navegacion {
+  background: transparent;
+  font-size: 2rem;
+  text-transform: capitalize;
+  text-decoration: none;
+  text-decoration-color: none;
+  color: var(--negro);
+}
+h1 {
+  font-size: 6.4rem;
+}
+h2 {
+  font-size: 2.5rem;
+}
+h3 {
+  font-size: 2rem;
+}
+h4 {
+  font-size: 5rem;
+}
+p {
+  font-size: 2rem;
+}
+a {
+  text-decoration: none;
+}
+@media (min-width: 768px) {
+  h1 {
+    font-size: 12.8rem;
+    text-transform: uppercase;
+  }
+  h2 {
+    font-size: 4rem;
+    font-weight: 700;
+  }
+  h3 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  h4 {
+    font-size: 10rem;
+  }
+  p {
+    font-size: 2.5rem;
+  }
+}
+.footer__texto {
+  margin-left: 2rem;
+  margin-top: 5rem;
+  font-size: 1.4rem;
+}
+/* Background-Color para cada pagina*/
+.pag-inicio {
+  background: linear-gradient(to right, var(--crema) 50%, var(--morado) 50%);
+}
+.pag-about {
+  background: var(--crema);
+}
+.pag-contact {
+  background: linear-gradient(to right, var(--marron) 50%, var(--crema) 50%);
+}
+.pag-serv1,
+.pag-serv2,
+.pag-serv3 {
+  background: linear-gradient(to bottom, var(--crema) 70%, var(--blancoM1) 30%);
+  background-repeat: no-repeat;
+}
+/*INDEX*/
+.contenedor-index {
+  margin: 0 auto;
+}
+.titulo-index {
+  margin-left: 5rem;
+  margin-top: 0.5rem;
+}
+.simbolo,
+.simbolo-about,
+.simbolo-contact {
+  height: 137px;
+  width: 141px;
+  margin-left: 120rem;
+  position: absolute;
+}
+.servicios {
+  margin-top: 15rem;
+  margin-left: 5rem;
+}
+/*About*/
