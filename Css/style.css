@@ -34,7 +34,7 @@ html {
   margin-right: 45px;
 }
 .contenedor__titulo h1 {
-  font-size: 12rem;
+  font-size: 6rem;
 }
 h2 {
   font-size: 2.5rem;
@@ -64,7 +64,7 @@ img {
   width: 100%;
 }
 @media (min-width: 768px) {
-  h1 {
+  .contenedor__titulo h1 {
     font-size: 12.8rem;
     text-transform: uppercase;
   }
@@ -82,6 +82,11 @@ img {
   }
   p {
     font-size: 2.5rem;
+  }
+  form {
+    width: 100%;
+    padding: 9px;
+    font-size: 1rem;
   }
 }
 form {
@@ -129,13 +134,11 @@ form {
 }
 hr {
   border-radius: 1px solid #d9d9d9;
-  width: 530px;
-  height: 0px;
+  width: 50%;
 }
 
 /*Contact*/
-.img_manoscontact {
-  position: absolute;
+.img_contact {
   height: 100%;
 }
 /*About*/
