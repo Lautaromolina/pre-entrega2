@@ -21,18 +21,20 @@ html {
 
 /*Globales*/
 * {
-  font-family: var(--fuentePrincipal);
+  font-family: var(--fuentePrincipal) !important;
 }
 .navegacion {
   background: transparent;
-  font-size: 2rem;
+  font-size: 3rem;
   text-transform: capitalize;
   text-decoration: none;
   text-decoration-color: none;
   color: var(--negro);
+  margin-left: 45px;
+  margin-right: 45px;
 }
-h1 {
-  font-size: 6.4rem;
+.contenedor__titulo h1 {
+  font-size: 12rem;
 }
 h2 {
   font-size: 2.5rem;
@@ -46,8 +48,20 @@ h4 {
 p {
   font-size: 2rem;
 }
-a {
+a:visited {
+  outline: none !important;
   text-decoration: none;
+  color: #000;
+}
+a:hover {
+  transition: transform 1s;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+.img_manos {
+  width: 100%;
 }
 @media (min-width: 768px) {
   h1 {
@@ -70,45 +84,58 @@ a {
     font-size: 2.5rem;
   }
 }
+form {
+  width: 50%;
+  padding: 9px;
+  font-size: 2.5rem;
+}
 .footer__texto {
   margin-left: 2rem;
   margin-top: 5rem;
   font-size: 1.4rem;
 }
 /* Background-Color para cada pagina*/
-.pag-inicio {
+.inicio {
   background: linear-gradient(to right, var(--crema) 50%, var(--morado) 50%);
 }
-.pag-about {
-  background: var(--crema);
+.about {
+  background-image: url("../IMG/bg_about.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.pag-contact {
+.contact {
   background: linear-gradient(to right, var(--marron) 50%, var(--crema) 50%);
 }
-.pag-serv1,
-.pag-serv2,
-.pag-serv3 {
+.serv1,
+.serv2,
+.serv3 {
   background: linear-gradient(to bottom, var(--crema) 70%, var(--blancoM1) 30%);
   background-repeat: no-repeat;
 }
 /*INDEX*/
-.contenedor-index {
+.contenedor {
   margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
-.titulo-index {
+.contenedor__titulo {
   margin-left: 5rem;
   margin-top: 0.5rem;
-}
-.simbolo,
-.simbolo-about,
-.simbolo-contact {
-  height: 137px;
-  width: 141px;
-  margin-left: 120rem;
-  position: absolute;
 }
 .servicios {
   margin-top: 15rem;
   margin-left: 5rem;
+}
+hr {
+  border-radius: 1px solid #d9d9d9;
+  width: 530px;
+  height: 0px;
+}
+
+/*Contact*/
+.img_manoscontact {
+  position: absolute;
+  height: 100%;
 }
 /*About*/

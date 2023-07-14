@@ -14,63 +14,82 @@
       href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./Css/style.css" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      crossorigin="anonymous"
+      crossorigin="anonymous" 
     />
+    <link rel="stylesheet" href="./Css/style.css" />
   </head>
-  <body class="pag-inicio">
+  <body class="inicio">
     <header>
-      <div class="simbolo">
-        <img alt="Cruz con cuadrado en el centro" src="./IMG/Simbolo.png" />
-      </div>
       <nav class="navegacion">
-        <a href="index.html">
-          <img
-            src="./IMG/LOGO.png"
-            alt="Logo Tus Manos"
-            class="navegacion__logo"
-          />
-        </a>
-        <ul class="navegacion__contenedor">
-          <li class="navegacion__contenedor--enlace">
-            <a href="./html/about.html"> About </a>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="./IMG/LOGO.png"
+              alt="Logo"
+              class="d-inline-block align-text-top navegacion__logo"
+            />
+          </a>
+        </div>
+        <ul class="nav justify-content-end">
+          <li class="nav-item">
+            <a
+              class="nav-link active link_text"
+              aria-current="page"
+              href="./html/about.html">About<a>
           </li>
-          <li class="navegacion__contenedor--enlace">
-            <a href="./html/contact.html"> Contact </a>
+          <li class="nav-item">
+            <a class="nav-link link_text" href="./html/contact.html">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link link_text" href="index.html">Inicio</a>
           </li>
         </ul>
       </nav>
     </header>
-    <main class="contenedor-index">
-      <h1 class="titulo-index">Crafting Innovation With Your Hands</h1>
+    <main>
+      <div class="contenedor__titulo">
+        <h1>Crafting Innovation With Your Hands</h1>
+      </div>
+      <section class="contenedor">
       <div class="servicios">
         <h3>Services:</h3>
-        <a class="servicios__enlace" href="./html/serv1.html">
-          <p>Web and Mobile Development</p>
-        </a>
-        <img class="servicio__img" src="./IMG/Ellipse.png" />
-        <a href="./html/serv2.html" class="servicios__enlace">
-          <p>UX/UI Design</p>
-        </a>
-        <img class="servicio__img" src="./IMG/Ellipse.png" />
-        <a class="servicios__enlace" href="html/serv3.html">
-          <p>Creative Consulting</p>
-        </a>
-        <img class="servicio__img" src="./IMG/Ellipse.png" />
+        <hr>
+          <div class="d-flex flex-column mb-3">
+            <div class="p-2">
+              <a class="servicios__enlace" href="./html/serv1.html">
+                <p class="text-start">Web and Mobile Development</p>
+              </a>
+            </div>
+            <hr>
+            <div class="p-2">
+              <a href="./html/serv2.html" class="servicios__enlace">
+                <p class="text-start">UX/UI Design</p>
+              </a>
+            </div>
+            <hr>
+            <div class="col">
+              <a class="servicios__enlace" href="html/serv3.html">
+                <p class="text-start">Creative Consulting</p>
+              </a>
+              <hr> 
+            </div>
+          </div>
       </div>
+      <article>
+        <img class="img_manos" src="./IMG/index_manos.png" alt="SaludosdeManos">
+      </article>
+      </section>
     </main>
     <footer class="footer">
       <p class="footer__texto">
         Lautaro Molina Pre-Entrega Proyecto Tus Manos
-        <a
-          target="_blank"
+        <a target="_blank"
           href="https://www.coderhouse.com/?gclid=EAIaIQobChMIlNPY-u7D_wIVDTHUAR1PrgYFEAAYASAAEgJGkPD_BwE"
-          ><span>CODERHOUSE</span></a
-        >
+          ><span>CODERHOUSE</span></a>
         - Todos los derechos Reservados 2023
       </p>
     </footer>
