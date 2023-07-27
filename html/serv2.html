@@ -1,95 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tus Manos Proyecto Molina</title>
-    <link
-      rel="stylesheet"
-      href="https://necolas.github.io/normalize.css/8.0.1/normalize.css"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="../Css/style.css" />
-  </head>
-  <body class="serv2">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tus Manos Proyecto Molina</title>
+  <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+  <link rel="stylesheet" href="../Css/style.css" />
+</head>
+<body class="serv2">
   <header>
-      <nav class="navegacion">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html">
-            <img
-              src="../IMG/LOGO.png"
-              alt="Logo"
-              class="d-inline-block align-text-top navegacion__logo"
-            />
-          </a>
+    <nav class="navegacion">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html">
+          <img src="../IMG/LOGO.png" alt="Logo" class="d-inline-block align-text-top navegacion__logo" />
+        </a>
+      </div>
+      <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link active link_text" aria-current="page" href="./about.html">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link_text" href="./contact.html">Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link link_text" href="../index.html">Inicio</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="container-fluid text-center">
+      <div class="justify-content-center ">
+            <ul class="nav flex-column navegacion__services">
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="serv1.html">Web & Mobile Development </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="serv2.html">UX/UI Design</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="serv3.html">Creative Consulting</a>
+              </li>
+            </ul>
+          </div>
+      <img class="img__line" src="../IMG/Line.png" />
+    </section>
+    <article class="container-fluid text-center bg-white">
+      <div class="row">
+        <div class="col">
+          <br>
+          <h2 class="display-2">
+            USER ADVOCATE
+          </h2>
+          <hr>
+          <h2 class="display-2">
+            PROBLEM SOLVER
+          </h2>
+          <hr>
+          <h2 class="display-2">
+            VISUAL STORYTELLER
+          </h2>
+          <hr>
         </div>
-        <ul class="nav justify-content-end">
-          <li class="nav-item">
-            <a
-              class="nav-link active link_text"
-              aria-current="page"
-              href="./about.html">About<a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link link_text" href="./contact.html">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link link_text" href="../index.html">Inicio</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="d-flex justify-content-around container-fluid">
-      <div class="bg-secondary bg-gradient">
-      <nav class="nav navegacion position-relative">
-          <a class="nav-link disabled text-dark">SERVICIES</a>
-          <a class="nav-link"  href="./serv1.html">Web/App Dev.</a>
-          <a class="nav-link active" aria-current="page" href="./serv2.html">UX/UI Design</a>
-          <a class="nav-link" href="./serv3.html">Creative Consulting</a>
-      </nav>
-      </div>
-      <div class="contenedor__titulo justify-content-center">
-        <h4>2:</h4>
-        <h1 class="display-1">UX/UI Design</h1>
-      </div>
-      </section>
-      <article class="container-fluid">
-        <div class="d-flex justify-content-center">
-          <h3><span>CH.1</span> User Advocate</h3>
-        <p>
-          Always keeping the needs, goals, and preferences of the target
-          audience at the forefront. They empathize with users, conduct research
-          to understand their behaviors, and design intuitive interfaces that
-          enhance user experiences.
+        <div class="col services__text d-none d-sm-block">
+          <p>
+          Always keeping the needs, goals, and preferences of the target audience at the forefront. They empathize with users, conduct research to understand their behaviors, and design intuitive interfaces that enhance user experiences.
+
+          Who tackles complex challenges by analyzing user interactions and identifying pain points. They leverage their creativity and analytical skills to conceptualize innovative solutions that address user needs and optimize usability.
         </p>
-        <h3><span>CH.2</span> Problem Solver</h3>
+        </div>
+        <div class="col services__text d-block d-sm-none"> 
         <p>
-          Who tackles complex challenges by analyzing user interactions and
-          identifying pain points. They leverage their creativity and analytical
-          skills to conceptualize innovative solutions that address user needs
-          and optimize usability.
+          Empathize with users, conduct research to understand their behaviors, and design intuitive interfaces that enhance user experiences.
         </p>
-        <h3><span>CH.3</span> Visual StoryTeller</h3>
-        <p>
-          Who crafts engaging and visually appealing interfaces. They combine
-          aesthetics with functionality, using color palettes, typography, and
-          visual elements to create compelling user experiences that evoke
-          emotions and enhance brand identity.
-        </p>
+        </div>
+        
       </div>
-      </article>
-    </main>
-  </body>
+    </article>
+  </main>
+</body>
 </html>

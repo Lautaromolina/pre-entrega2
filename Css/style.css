@@ -25,16 +25,20 @@ html {
 }
 .navegacion {
   background: transparent;
-  font-size: 3rem;
+  font-size: 2.5rem;
   text-transform: capitalize;
   text-decoration: none;
   text-decoration-color: none;
   color: var(--negro);
-  margin-left: 45px;
-  margin-right: 45px;
 }
+.navegacion__services{
+  background: var(--blancoM2);
+  font-size: 3rem;
+  color: var(--negro);
+}
+
 .contenedor__titulo h1 {
-  font-size: 6rem;
+  font-size: 4rem;
 }
 h2 {
   font-size: 2.5rem;
@@ -43,7 +47,8 @@ h3 {
   font-size: 2rem;
 }
 h4 {
-  font-size: 5rem;
+  text-align: center;
+  font-size: 3rem;
 }
 p {
   font-size: 2rem;
@@ -64,8 +69,22 @@ img {
   width: 100%;
 }
 @media (min-width: 768px) {
+  .navegacion {
+  background: transparent;
+  font-size: 3rem;
+  text-transform: capitalize;
+  text-decoration: none;
+  text-decoration-color: none;
+  color: var(--negro);
+  }
+  .navegacion__services{
+  background: var(--blancoM2);
+  font-size: 6rem;
+  color: var(--negro);
+  }
+  
   .contenedor__titulo h1 {
-    font-size: 12.8rem;
+    font-size: 7rem;
     text-transform: uppercase;
   }
   h2 {
@@ -85,14 +104,21 @@ img {
   }
   form {
     width: 100%;
+    height: 50%;
     padding: 9px;
-    font-size: 1rem;
+    font-size: 3rem !important;
+    
+  }
+  .img_line {
+    width: 100%;
+    margin: 0;
+
   }
 }
 form {
-  width: 50%;
+  width: 100%;
   padding: 9px;
-  font-size: 2.5rem;
+  font-size: 1.5rem;
 }
 .footer__texto {
   margin-left: 2rem;
@@ -115,8 +141,7 @@ form {
 .serv1,
 .serv2,
 .serv3 {
-  background: linear-gradient(to bottom, var(--crema) 70%, var(--blancoM1) 30%);
-  background-repeat: no-repeat;
+  background-color: var(--crema);
 }
 /*INDEX*/
 .contenedor {
@@ -127,6 +152,7 @@ form {
 .contenedor__titulo {
   margin-left: 5rem;
   margin-top: 0.5rem;
+  margin-right: 5rem;
 }
 .servicios {
   margin-top: 15rem;
@@ -138,7 +164,18 @@ hr {
 }
 
 /*Contact*/
-.img_contact {
-  height: 100%;
+
+@media screen and (max-width: 428px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contenedor__titulo {
+    text-align: center;
+  }
+
+  main {
+    width: 100%;
+  }
 }
-/*About*/
