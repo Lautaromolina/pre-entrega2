@@ -1,3 +1,145 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+* {
+  font-family: "Nanum Myeongjo", serif !important;
+}
+
+.contenedor__titulo h1 {
+  margin-top: 2rem;
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+
+.nav-link {
+  color: black;
+}
+
+@media screen and (min-width: 768px) {
+  .contenedor__titulo h1 {
+    font-size: 7rem;
+  }
+  h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+  }
+  h3 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+  p {
+    font-size: 2.5rem;
+  }
+  form {
+    width: 100%;
+    height: 50%;
+    padding: 9px;
+    font-size: 3rem !important;
+  }
+}
+@media screen and (max-width: 767.11px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main {
+    width: 100%;
+  }
+  .nav {
+    max-width: 100%;
+  }
+  .logo {
+    max-width: 54%;
+  }
+}
+.navegacion {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+  background: transparent;
+  font-size: 2.5rem;
+}
+.navegacion .nav {
+  border: transparent;
+}
+@media screen and (min-width: 768px) {
+  .navegacion {
+    background: transparent;
+    font-size: 3rem;
+    text-transform: capitalize;
+    text-decoration: none;
+    text-decoration-color: none;
+    color: #000;
+  }
+}
+@media screen and (max-width: 767.11px) {
+  .navegacion {
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+a {
+  color: #000;
+}
+a:visited {
+  outline: none !important;
+  text-decoration: none;
+}
+
+.about {
+  background-image: url("../IMG/bg_about.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+}
+
+.contact {
+  background: linear-gradient(to right, #9b6a6c 50%, #fdfbcd 50%);
+}
+
+form {
+  width: 100%;
+  padding: 9px;
+  font-size: 1.5rem;
+}
+
+.footer__texto {
+  margin-left: 2rem;
+  margin-top: 5rem;
+  font-size: 1.4rem;
+}
+
 .card-body {
   position: relative;
   width: 100%;
@@ -113,7 +255,7 @@
 .eye {
   width: 15%;
   height: 17%;
-  background-color: black;
+  background-color: #000;
   top: 45%;
   border-radius: 50%;
 }
@@ -259,4 +401,108 @@
   transform: rotate(-80deg);
 }
 
-/*# sourceMappingURL=penguin.css.map */
+.inicio {
+  background: linear-gradient(to right, #fdfbcd 50%, #984678 50%);
+  overflow: auto;
+}
+
+.contenedor__titulo {
+  margin-left: 5rem;
+  margin-top: 0.5rem;
+  margin-right: 5rem;
+}
+@media screen and (max-width: 767.11px) {
+  .contenedor__titulo {
+    text-align: center;
+  }
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.contenedor .servicios {
+  margin-top: 15rem;
+  margin-left: 5rem;
+}
+
+.navegacion__services {
+  background: #fefeee;
+  font-size: 2.5rem;
+  color: #000;
+  text-decoration: none;
+  margin-top: 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .navegacion__services {
+    background: #fefeee;
+    font-size: 6rem;
+    color: #000;
+  }
+}
+
+.serv1,
+.serv2,
+.serv3 {
+  background-color: #fdfbcd;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.hamburger-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+  position: relative;
+}
+
+.hamburger-icon,
+.hamburger-icon::before,
+.hamburger-icon::after {
+  content: "";
+  display: block;
+  width: 2.5rem;
+  height: 0.2rem;
+  background-color: #000;
+  margin-bottom: 0.5rem;
+  transition: background-color 0.5s ease;
+}
+
+.hamburger-icon::before {
+  margin-bottom: 1rem;
+}
+
+.hamburger-icon::after {
+  margin-top: 0.5rem;
+}
+
+.menu-list {
+  text-align: start;
+  list-style: none;
+  margin-right: 1rem;
+  padding-right: 1rem;
+  display: none;
+  text-align: end;
+}
+
+.menu-list.active {
+  display: block;
+}
+
+@media screen and (max-width: 767.11px) {
+  .mobile-menu {
+    display: block;
+    font-size: 1.6rem;
+  }
+  .menu-list {
+    display: none;
+  }
+  .menu-list.active {
+    display: block;
+  }
+}
+
+/*# sourceMappingURL=app.css.map */

@@ -1,0 +1,61 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.mobile-menu {
+	display: none;
+}
+
+.hamburger-button {
+	background: none;
+	border: none;
+	cursor: pointer;
+	padding: 10px;
+	position: relative;
+}
+
+.hamburger-icon,
+.hamburger-icon::before,
+.hamburger-icon::after {
+	content: "";
+	display: block;
+	width: 2.5rem;
+	height: 0.2rem;
+	background-color: v.$negro;
+	margin-bottom: 0.5rem;
+	transition: background-color 0.5s ease;
+}
+
+.hamburger-icon::before {
+	margin-bottom: 1rem;
+}
+
+.hamburger-icon::after {
+	margin-top: 0.5rem;
+}
+
+.menu-list {
+	text-align: start;
+	list-style: none;
+	margin-right: 1rem;
+	padding-right: 1rem;
+	display: none;
+	text-align: end;
+}
+
+.menu-list.active {
+	display: block;
+}
+@include m.telefono {
+	.mobile-menu {
+		display: block;
+		font-size: 1.6rem;
+	}
+
+	.menu-list {
+		display: none;
+	}
+
+	.menu-list.active {
+		display: block;
+	}
+}

@@ -1,9 +1,0 @@
-@mixin flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-@mixin sizes($width, $height) {
-    width: $width; 
-    height: $height;
-}

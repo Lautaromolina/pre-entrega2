@@ -1,0 +1,9 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+.about {
+	background-image: url("../IMG/bg_about.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	overflow: hidden;
+}

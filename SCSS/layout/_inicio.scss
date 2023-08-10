@@ -1,0 +1,23 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.inicio {
+	background: linear-gradient(to right, v.$crema 50%, v.$morado 50%);
+	overflow: auto;
+}
+.contenedor__titulo {
+	margin-left: 5rem;
+	margin-top: 0.5rem;
+	margin-right: 5rem;
+	@include m.telefono {
+		text-align: center;
+	}
+}
+.contenedor {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	.servicios {
+		margin-top: 15rem;
+		margin-left: 5rem;
+	}
+}

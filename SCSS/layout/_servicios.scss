@@ -1,0 +1,21 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.navegacion__services {
+	background: v.$blancoM2;
+	font-size: 2.5rem;
+	color: v.$negro;
+	text-decoration: none;
+	margin-top: 1.5rem;
+	@include m.tablet {
+		background: v.$blancoM2;
+		font-size: 6rem;
+		color: v.$negro;
+	}
+}
+
+.serv1,
+.serv2,
+.serv3 {
+	background-color: v.$crema;
+}

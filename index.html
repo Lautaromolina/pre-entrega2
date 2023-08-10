@@ -23,27 +23,38 @@
 			integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
 			crossorigin="anonymous"
 		/>
-		<link rel="stylesheet" href="./Css/style.css" />
+		<link rel="stylesheet" href="./Css/app.css" />
 	</head>
 	<body class="inicio">
 		<header>
 			<nav class="navegacion">
-				<div class="navegacion__logo">
+				<div>
 					<a class="navbar-brand" href="index.html">
-						<img src="./IMG/LOGO.png" alt="Logo" class="img-fluid" />
+						<img src="./IMG/LOGO.png" alt="Logo" class="img-fluid logo" />
 					</a>
 				</div>
 				<ul class="nav nav-tabs">
-					<li class="nav-item">
+					<li class="nav-item d-none d-md-block d-lg-block d-xl-block d-xxl-block">
 						<a class="nav-link link_text" href="./html/about.html">About</a>
 					</li>
-					<li class="nav-item">
+					<li class="nav-item d-none d-md-block d-lg-block d-xl-block d-xxl-block">
 						<a class="nav-link link_text" href="./html/contact.html">Contact</a>
 					</li>
-					<li class="nav-item">
-						<a class="nav-link link_text active" aria-current="page" href="index.html">Inicio</a>
+					<li class="nav-item d-none d-md-block d-lg-block d-xl-block d-xxl-block">
+						<a class="nav-link link_text" href="./html/serv1.html">Services</a>
 					</li>
 				</ul>
+				<div class="mobile-menu">
+					<button class="hamburger-button">
+						<span class="hamburger-icon"></span>
+					</button>
+					<ul class="menu-list bg-warning-subtle nav-tabs border border-0">
+						<li class="nav-item"><a class="nav-link link_text border border-0" href="./index.html">Inicio</a></li>
+						<li class="nav-item"><a class="nav-link link_text border border-0" href="./html/about.html">About</a></li>
+						<li class="nav-item"><a class="nav-link link_text border border-0" href="./html/contact.html">Contact</a></li>
+						<li class="nav-item"><a class="nav-link link_text border border-0" href="./html/serv1.html">Services</a></li>
+					</ul>
+				</div>
 			</nav>
 		</header>
 		<main>
@@ -55,17 +66,17 @@
 					<h2 class="display-2">Services:</h2>
 					<div class="d-flex flex-column">
 						<div class="p-2">
-							<a class="servicios__enlace" href="./html/serv1.html">
+							<a href="./html/serv1.html">
 								<p class="text-start">Web and Mobile Development</p>
 							</a>
 						</div>
 						<div class="p-2">
-							<a href="./html/serv2.html" class="servicios__enlace">
+							<a href="./html/serv2.html">
 								<p class="text-start">UX/UI Design</p>
 							</a>
 						</div>
 						<div class="p-2">
-							<a class="servicios__enlace" href="html/serv3.html">
+							<a href="html/serv3.html">
 								<p class="text-start">Creative Consulting</p>
 							</a>
 						</div>
@@ -92,5 +103,6 @@
 			integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS"
 			crossorigin="anonymous"
 		></script>
+		<script src="/app.js"></script>
 	</body>
 </html>

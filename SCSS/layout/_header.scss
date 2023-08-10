@@ -1,0 +1,35 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+
+.navegacion {
+	display: flex;
+	justify-content: space-between;
+	padding: 1rem;
+	background: transparent;
+	font-size: 2.5rem;
+
+	.nav {
+		border: transparent;
+	}
+	@include m.tablet {
+		background: transparent;
+		font-size: 3rem;
+		text-transform: capitalize;
+		text-decoration: none;
+		text-decoration-color: none;
+		color: v.$negro;
+	}
+	@include m.telefono {
+		font-size: 2rem;
+		display: flex;
+		justify-content: space-between;
+	}
+}
+
+a {
+	color: v.$negro;
+	&:visited {
+		outline: none !important;
+		text-decoration: none;
+	}
+}
