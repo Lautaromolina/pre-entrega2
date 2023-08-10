@@ -2,10 +2,33 @@
 @use "../base/mixins" as m;
 
 .contact {
-	background: linear-gradient(to right, v.$marron 50%, v.$crema 50%);
+	//background: linear-gradient(to right, v.$marron 50%, v.$crema 50%);
+	background: linear-gradient(90deg, rgb(118, 201, 255), v.$crema);
 }
 form {
 	width: 100%;
 	padding: 9px;
-	font-size: 1.5rem;
+	.btn {
+		width: 100%;
+		background: radial-gradient(rgb(118, 201, 255) 10%, v.$crema 90%);
+		.btn-text {
+			font-size: 3rem;
+			@media screen and (max-width: 991.11px) {
+				font-size: 1.5rem;
+			}
+		}
+	}
+	@media screen and (max-width: 991.11px) {
+		font-size: 1.5rem;
+	}
+	.bg-form {
+		border: 2rem;
+		background: v.$crema;
+		font-size: 3rem;
+		max-height: 50%;
+
+		@media screen and (max-width: 991.11px) {
+			font-size: 1.5rem;
+		}
+	}
 }

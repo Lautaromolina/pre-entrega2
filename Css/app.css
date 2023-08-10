@@ -64,7 +64,7 @@ img {
     font-size: 3rem !important;
   }
 }
-@media screen and (max-width: 767.11px) {
+@media screen and (max-width: 767px) {
   body {
     display: flex;
     flex-direction: column;
@@ -100,7 +100,7 @@ img {
     color: #000;
   }
 }
-@media screen and (max-width: 767.11px) {
+@media screen and (max-width: 767px) {
   .navegacion {
     font-size: 2rem;
     display: flex;
@@ -117,21 +117,44 @@ a:visited {
 }
 
 .about {
-  background-image: url("../IMG/bg_about.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow: hidden;
+  background: linear-gradient(to right, #fdfbcd 50%, #d0746e 50%);
 }
 
 .contact {
-  background: linear-gradient(to right, #9b6a6c 50%, #fdfbcd 50%);
+  background: linear-gradient(90deg, rgb(118, 201, 255), #fdfbcd);
 }
 
 form {
   width: 100%;
   padding: 9px;
-  font-size: 1.5rem;
+}
+form .btn {
+  width: 100%;
+  background: radial-gradient(rgb(118, 201, 255) 10%, #fdfbcd 90%);
+}
+form .btn .btn-text {
+  font-size: 3rem;
+}
+@media screen and (max-width: 991.11px) {
+  form .btn .btn-text {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 991.11px) {
+  form {
+    font-size: 1.5rem;
+  }
+}
+form .bg-form {
+  border: 2rem;
+  background: #fdfbcd;
+  font-size: 3rem;
+  max-height: 50%;
+}
+@media screen and (max-width: 991.11px) {
+  form .bg-form {
+    font-size: 1.5rem;
+  }
 }
 
 .footer__texto {
@@ -148,7 +171,7 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(45deg, rgb(118, 201, 255), rgb(247, 255, 222));
+  background: linear-gradient(45deg, rgb(118, 201, 255), #fdfbcd);
 }
 
 .penguin-container {
@@ -411,7 +434,7 @@ form {
   margin-top: 0.5rem;
   margin-right: 5rem;
 }
-@media screen and (max-width: 767.11px) {
+@media screen and (max-width: 767px) {
   .contenedor__titulo {
     text-align: center;
   }
@@ -492,7 +515,7 @@ form {
   display: block;
 }
 
-@media screen and (max-width: 767.11px) {
+@media screen and (max-width: 767px) {
   .mobile-menu {
     display: block;
     font-size: 1.6rem;

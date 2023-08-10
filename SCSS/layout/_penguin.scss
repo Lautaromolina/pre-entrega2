@@ -6,7 +6,7 @@
 	@include m.sizes(100%, 100vh);
 	overflow: hidden;
 	@include m.flex-center;
-	background: linear-gradient(45deg, rgb(118, 201, 255), rgb(247, 255, 222));
+	background: linear-gradient(45deg, rgb(118, 201, 255), v.$crema);
 }
 
 .penguin-container {
